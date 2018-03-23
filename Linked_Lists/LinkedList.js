@@ -33,7 +33,13 @@ Node.prototype.printList = function () {
     console.log(currentNode.data);
 };
 
-function generateTestList(length) {
+function generateTestList(length, type) {
+    switch(type){
+        case 'ordered':
+        case 'randomized':
+        default:
+        
+    }
     let headOfList = new Node(0);
     for (let i = 1; i < length; i++) {
         headOfList.appendToTail(i);
